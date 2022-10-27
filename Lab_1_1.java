@@ -16,7 +16,7 @@ public static void main(String[] args)throws IOException{
 	 //  ReadTxt("\\Users\\ASUS\\Desktop\\samplec.c",4);
 	  ReadTxt(file,l);
 	  long endTime = System.currentTimeMillis();
-	  System.out.println("程序运行时间：" + (endTime - startTime) + "ms");    //输出程序运行时间
+	  System.out.println("程序运行时间：" + (endTime - startTime) + "ms");
 }
 public static void ReadTxt(String path,int level)throws IOException{
 		String text="";
