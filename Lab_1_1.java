@@ -8,18 +8,18 @@ public class Lab_1_1 {
 public static void main(String[] args)throws IOException{
 	Scanner sc = new Scanner(System.in);
 	long startTime = System.currentTimeMillis();    //获取开始时间
-//	  System.out.println("Enter your file path");
-//	  String file="";
-//	  file=sc.nextLine();
-//	  System.out.println("Enter test level");
-//	  int l= sc.nextInt();
-	   ReadTxt("\\Users\\ASUS\\Desktop\\samplec.c",4);
-//	  ReadTxt(file,l);
+	  System.out.println("Enter your file path");
+	  String file="";
+	  file=sc.nextLine();
+	  System.out.println("Enter test level");
+	  int l= sc.nextInt();
+	 //  ReadTxt("\\Users\\ASUS\\Desktop\\samplec.c",4);
+	  ReadTxt(file,l);
 	  long endTime = System.currentTimeMillis();
 	  System.out.println("程序运行时间：" + (endTime - startTime) + "ms");    //输出程序运行时间
 }
-public static void ReadTxt(String path,int level)throws IOException{ 
-		String text="";	
+public static void ReadTxt(String path,int level)throws IOException{
+		String text="";
 		String fileName=path;
 		 FileReader fileReader = new FileReader(fileName);
 	       BufferedReader bufferedReader = new BufferedReader(fileReader);
